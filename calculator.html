@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Price Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <h1>Calculate price for courier transport now
+</h1>
+        <form id="calculator-form">
+            <label for="loading-city">Loading City:</label>
+            <input type="text" id="loading" placeholder="Enter loading city" required>
+
+            <label for="delivering-city">Delivering City:</label>
+            <input type="text" id="Unloading" placeholder="Enter unloading city" required>
+
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" placeholder="Enter weight in kg" required>
+
+            <label for="urgency">Delivery Urgency:</label>
+            <select id="urgency" required>
+                <option value="1">Standard</option>
+                <option value="1.5">Express</option>
+                <option value="2">Priority</option>
+            </select>
+
+            <button type="button" id="calculate-button">Calculate Price</button>
+        </form>
+        <div id="result-container">
+            <h2>Total Price: <span id="result">€0.00</span></h2><a href="pay.html" class="back-button">Go to payment</a>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>

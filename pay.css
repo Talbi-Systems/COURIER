@@ -1,0 +1,246 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+}
+
+.payment-container, .redirect-container, .bank-transfer-container, .payment-accepted-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+h2, h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.payment-option, .details {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+input[type="text"], input[type="number"] {
+    width: calc(100% - 20px);
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover, .button:hover {
+    background-color: darkgreen;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+	 text-color: black;
+}
+
+li {
+    margin: 10px 0;
+	 text-color: black;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.payment-accepted-container {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 50px auto;
+}
+
+.payment-accepted-container h1 {
+    color: #28a745;
+    font-size: 24px;
+}
+
+.payment-accepted-container p {
+    color: #555;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.payment-accepted-container .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.payment-accepted-container .btn:hover {
+    background-color: #0056b3;
+}
+
+a {
+    color: black;
+    text-decoration: none; /* Removes the underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Optionally, add underline on hover */
+    color: black; /* Ensure the color stays black on hover */
+}
+
+/* Style specifically for the bank-transfer page */
+.bank-transfer-page {
+    background-image: url('ideal1.png');
+    background-size: 50; /* Makes the image cover the entire page */
+    background-repeat: no-repeat; /* Ensures the image doesn’t repeat */
+    background-position: center; /* Centers the image */
+    height: 50vh; /* Makes the background cover the full height of the viewport */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.invisible-button {
+    position: absolute; /* Position the button relative to the page */
+    top: 100px; /* Adjust the distance from the top */
+    left: 600px; /* Adjust the distance from the left */
+    width: 50px; /* Define the size of the clickable area */
+    height: 30px; /* Define the size of the clickable area */
+    background: transparent; /* Make the button background invisible */
+    border: none; /* Remove any default borders */
+    cursor: pointer; /* Show a pointer when hovering over the area */
+    z-index: 1000; /* Ensure the button stays above other elements */
+}
+
+.invisible-button:focus {
+    outline: none; /* Remove focus outline when the button is clicked */
+}
+
+/* Invisible Button Specific to ABN AMRO Page */
+.invisible-abn-button {
+    position: absolute; /* Position the button relative to the page */
+    top: 20px; /* Adjust position from the top */
+    left: 20px; /* Adjust position from the left */
+    width: 60px; /* Define the clickable area */
+    height: 60px; /* Define the clickable area */
+    background: transparent; /* Make the button invisible */
+    border: none; /* Remove borders */
+    cursor: pointer; /* Show pointer on hover */
+    z-index: 2000; /* Ensure it stays above other elements */
+}
+
+.invisible-abn-button:focus {
+    outline: none; /* Remove focus outline */
+}
+
+/* Optional hover effect for debugging (remove in production) */
+.invisible-abn-button:hover {
+    background: rgba(0, 0, 0, 0.1); /* Adds a slight visible background for testing */
+}
+
+/* ABN AMRO Page Styles */
+.abn-amro-page {
+    background-image: url('abn1.png');
+    background-size: 600px; /* Makes the image cover the entire page */
+    background-repeat: no-repeat; /* Ensures the image doesn’t repeat */
+    background-position: center; /* Centers the image */
+    height: 100vh; /* Makes the background cover the full height of the viewport */
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.payment-accepted-container {
+    text-align: center;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #4CAF50;
+    font-size: 2.5em;
+}
+
+h3 {
+    color: #333;
+    font-size: 1.5em;
+}
+
+p {
+    color: #666;
+    font-size: 1.2em;
+}
+
+.back-button {
+    display: inline-block;
+	 width: 90%;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: darkred;
+}
+
+.front-button {
+    display: inline-block;
+	 width: 90%;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.front-button:hover {
+    background-color: lightgreen;
+}
+
+
